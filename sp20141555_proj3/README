@@ -1,0 +1,16 @@
+프로그램 실행방법
+make 입력 후
+./20141555.out
+입력하면 프로그램이 시작된다.
+
+proaddr [address]
+address를 입력하지 않아도 되며 그럴 경우 progaddr는 0이다.
+
+loader [objectfilename1] [object filename2] [..]
+을 입력하면 linking loader가 실행된다.
+해당 objectfile이 directory에 있어야한다.
+
+bp관련
+bp만 입력하면 모든 breakpoint가 출력된다.
+bp이후 숫자를 입력하면 해당 bp를 새롭게 추가한다.
+bp clear는 모든 bp를 삭제한다.

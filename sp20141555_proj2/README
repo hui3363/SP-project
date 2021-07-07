@@ -1,0 +1,14 @@
+GCC환경에서 제작되었다
+make 를 치고 ./20141555.out을 치면 프로램이 시작된다.
+
+
+새로 추가된 명령어
+1) type filename
+    ex) type opcode.txt
+2) assemble filename
+    assemble하고자 하는 .asm파일이 존재해야 한다.
+    ex) assemble 2_5.asm
+3) symbol
+    앞선 assemble에서 생성된 symbol들을 출력한다.
+    ex)symbol
+

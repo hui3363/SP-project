@@ -1,0 +1,8 @@
+AWS 계정에 로그인후
+버킷을 생성하여 Mapper.py와 Reducer.py 파일을 업로드한다.
+
+EMR 기능으로 가서 cluster를 생성하고
+버킷에 있던 Mapper.py, Reducer.py 파일과 input file 링크, output file directory 주소를 입력한다.
+cluster를 create하면 실행되고
+결과 output file들이 내 버킷의 output directory에 part-* 로 생성이 된다.
+

@@ -1,0 +1,48 @@
+1) 컴파일 방법
+	make를 치면 20141555.c가 빌드된다.
+	./20141555.out을 입력하면 컴파일되어 프로그램이 시작된다.
+
+2) 실행 방법
+	unix shell과 같이
+	sicsim>
+	이 보이면 명령어를 입력할 수 있다.
+
+	이 프로그램은 quit이 입력될 때 까지 지속된다.
+ 
+	(1) shell관련 명령어
+	help, dir, history 는 각각 입력했을 때 명령어의 리스트, 현재 폴더의 실행파일과 폴더들, 현재까지 입력한 명령어를 보여준다.
+	quit을 입력하면 프로그램이 종료된다.
+
+Ex) help
+	h
+	dir
+	d
+	history
+	hi
+	quit
+	q
+
+	(2) 메모리 관련 명령어
+	dump [start, end]를 입력하면  shell에 할당된 메모리 공간에 start부터 end까지 메모리 값을 보여준다.
+	start만 입력해도 start부터 160개의 메모리를 보여주고, start와 end모두 입력하지 않아도 마지막으로 출력한 메모리 값 바로 다음부터 출력해준다.
+	edit address, value를 입력하면 address에 해당하는 메모리 값을 value로 변경시킨다.
+	fill start, end, value를 입력하면  start부터 end까지 메모리 값을 value로 변경시킨다.
+	reset을 입력하면  메모리 전체를 0으로 변경시킨다.
+	dump와 edit와 fill에서 뒤에 값을 입력할 때 뛰어쓰기나 , 위치는 상관없이 실행된다.
+	하지만 dump 20 30 과 같이 ,가 없으면 안된다.
+	dump\t처럼 명령어 앞 뒤에 공백이 올 수 있다.
+
+Ex) dump
+	du 34, 7E
+	dump FFEE0
+	edit 5E, 36
+	e 0, 44
+	fill 74, D3, FF
+	reset
+	
+	(3) OPCODE TABLE 관련 명령어
+	opcode mnemonic을 입력하면 명령어에 해당하는 opcode를 출력한다.
+	opcodelist를 입력하면 opcode Hash Table을 출력한다.
+
+Ex) opcode ADD
+	opcodelist

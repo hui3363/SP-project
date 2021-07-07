@@ -1,0 +1,16 @@
+CC= gcc
+CFLAGS = -g -c -Wall
+
+OBJECTS = 20141555.o
+SRCS = 20141555.c
+
+TARGET = 20141555.out
+
+$(TARGET) : $(OBJECTS)
+	$(CC) -o $(TARGET) $(OBJECTS)
+
+20141555.o : 20141555.h 20141555.c
+	$(CC) $(CFLAGS) -c 20141555.c
+
+clean :
+	rm -rf $(OBJECTS) $(TARGET)
