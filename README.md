@@ -11,9 +11,9 @@
 - Project 3 - Linking Loader & Runner & Debugger
 
 
-### AWS Project
+### Python Project (AWS)
 
-- Project 4 - Web Crawler Using BeautifulSoup4 (Python)
+- Project 4 - Web Crawler Using BeautifulSoup4 
 
 - Project 5 - N-Gram Language Model  
     - AWS EMR(Hadoop), S3
